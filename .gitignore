@@ -39,10 +39,11 @@ _testmain.go
 #bower_components/
 .tmp
 #.sass-cache
-#builds/**/images/*
-#*.ogg
-#*.mp3
-#*.mp4
-#*.png
-#*.jpeg
+builds/**/images/*
+*.ogg
+*.mp3
+*.mp4
+*.png
+*.jpeg
 *.psd
+*.jpg
