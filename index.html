@@ -6,100 +6,7 @@
     <meta charset="UTF-8">
     <!-- 網頁title -->
     <title>健身網站資訊</title>
-    <style>
-        body {
-            background-color: #ffe9f4;
-            font-family: 'Times New Roman', Times, serif, 新細明體;
-        }
-
-        #container {
-            width: 75%;
-            margin: 10px auto;
-            text-align: left;
-        }
-
-        h1 {
-            font-family: 'Times New Roman', Times, serif, 標楷體;
-        }
-
-        .title {
-            margin: 10px;
-            color: pink;
-            background-color: black;
-            font-family: 'Times New Roman', Times, serif, 標楷體;
-            font-size: 4rem;
-            height: 6rem;
-            line-height: 6rem;
-            text-align: center;
-            border-radius: 0.5rem;
-
-        }
-
-        .text1 {
-            margin: 10px;
-            padding: 10px 32px;
-            color: #ffffff;
-            background-color: #ffb3bf;
-            font-family: 'Times New Roman', Times, serif, 新細明體;
-            font-size: 1rem;
-            line-height: 2rem;
-            /* text-align: center; */
-            border-radius: 0.5rem;
-        }
-
-        .text2 {
-            margin: 10px;
-            padding: 10px 32px;
-            color: #775c60;
-            background-color: #c2d3fd;
-            font-family: 'Times New Roman', Times, serif, 新細明體;
-            font-size: 1rem;
-            line-height: 2rem;
-            /* text-align: center; */
-            border-radius: 0.5rem;
-        }
-
-        .text3 {
-            margin: 10px;
-            padding: 10px 32px;
-            color: #000000;
-            background-color: #cff0ec;
-            font-family: 'Times New Roman', Times, serif, 新細明體;
-            font-size: 1rem;
-            /* text-align: center; */
-            border-radius: 0.5rem;
-        }
-
-        ol {}
-
-        li {
-            text-align: left;
-        }
-
-        ul a {
-            text-decoration: none;
-            line-height: 20px;
-        }
-
-        ul a:hover {
-            color: chartreuse;
-        }
-
-        ul a:visited {
-            color: darkkhaki;
-        }
-
-        ul a:active {
-            color: red;
-        }
-
-        #image img {
-            background-color: #ffb3bf;
-            padding: 3px;
-            width: 31%;
-
-        }
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 
@@ -132,7 +39,7 @@
                     src="https://fitnesstwenty.com/wp-content/uploads/2020/10/71-1024x320.jpg" alt="71-1024x320.jpg"
                     width="100%"></a>
 
-            <h2>健身的10個好處</h2>
+            <h2 class="title">健身的10個好處</h2>
             <ol type="1">
                 <li>增加基礎代謝率</li>
                 <li>預防疾病和提高免疫力</li>
@@ -148,7 +55,7 @@
 
         </div>
         <hr>
-        <h2>好文章連結</h2>
+        <h2 class="title">好文章連結</h2>
         <li>
             <a href="https://www.fe-amart.com.tw/index.php/life-style/life-info/secret-recipe/hero-6" target="_blank">
                 健身初學者必看！10個常見的健身迷思</a>
@@ -174,61 +81,70 @@
             <a href="https://fitnesstwenty.com/" target="_blank">https://fitnesstwenty.com/</a>
         </small>
         <hr>
-        <h2>一天所需卡路里</h2>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>每天活動量</th>
-                    <th>體重過輕者所需熱量</th>
-                    <th>體重正常者所需熱量</th>
-                    <th>體重過重、肥胖者所需熱量</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>輕度工作</th>
-                    <td>35大卡 X 目前體重（公斤）</td>
-                    <td>30大卡 X 目前體重（公斤）</td>
-                    <td>20~25大卡 X 目前體重（公斤）</td>
-                </tr>
-                <tr>
-                    <th>中度工作</th>
-                    <td>40大卡 X 目前體重（公斤）</td>
-                    <td>35大卡 X 目前體重（公斤）</td>
-                    <td>30大卡 X 目前體重（公斤）</td>
-                </tr>
-                <tr>
-                    <th>重度工作</th>
-                    <td>45大卡 X 目前體重（公斤）</td>
-                    <td>40大卡 X 目前體重（公斤）</td>
-                    <td>35大卡 X 目前體重（公斤）</td>
-                </tr>
+        <h2 class="title">一天所需卡路里</h2>
+        <div id="main-table">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>每天活動量</th>
+                        <th>體重過輕者所需熱量</th>
+                        <th>體重正常者所需熱量</th>
+                        <th>體重過重、肥胖者所需熱量</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>輕度工作</th>
+                        <td>35大卡 X 目前體重（公斤）</td>
+                        <td>30大卡 X 目前體重（公斤）</td>
+                        <td>20~25大卡 X 目前體重（公斤）</td>
+                    </tr>
+                    <tr>
+                        <th>中度工作</th>
+                        <td>40大卡 X 目前體重（公斤）</td>
+                        <td>35大卡 X 目前體重（公斤）</td>
+                        <td>30大卡 X 目前體重（公斤）</td>
+                    </tr>
+                    <tr>
+                        <th>重度工作</th>
+                        <td>45大卡 X 目前體重（公斤）</td>
+                        <td>40大卡 X 目前體重（公斤）</td>
+                        <td>35大卡 X 目前體重（公斤）</td>
+                    </tr>
 
-            </tbody>
-        </table>
-        <p><a href="bmi.html"><b>計算BMI:</b></a>一位民眾身高160公分，體重65公斤，BMI25.4kg/m2(=65÷1.6÷1.6)，體重屬於「過重」。
+                </tbody>
+            </table>
+        </div>
+        <p class="text1"><a href="bmi.html"><b>計算BMI:</b></a>一位民眾身高160公分，體重65公斤，BMI25.4kg/m2(=65÷1.6÷1.6)，體重屬於「過重」。
             <br><a href=""><b>計算所需熱量:</b></a>因他的工作為坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間(=20~25大卡*65公斤)。
         </p>
         <hr>
-        <h2>影片連結</h2>
-        <iframe width="640" height="360" src="https://www.youtube.com/embed/1ZvsdJ9dgVo"
-            title="一踏進健身房要練什麼？🤔給初學者的實用動作教學💪🏻 該買一對一教練課嗎？健身工廠新場館盛大開幕😍" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+        <div class="text4">
+            <h2 class="title">影片連結</h2>
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/1ZvsdJ9dgVo"
+                title="一踏進健身房要練什麼？🤔給初學者的實用動作教學💪🏻 該買一對一教練課嗎？健身工廠新場館盛大開幕😍" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
         <hr>
-        <h2>填寫表單</h2>
-        <!-- GET/POST -->
-        需要更多資訊?免費索取健身資訊<br>
-        <b>前100名還贈送［我愛健身］書籍一本!</b>
-        <form action="" method="get">
-            <p><label for="email">EMAIL</label>
-                <input type="email" name="email" id="email">
-            </p>
-            <label for="comment">您的寶貴意見</label><br>
-            <textarea name="" id="comment" cols="30" rows="10"></textarea>
+        <div class="text4">
+            <h2 class="title">填寫表單</h2>
+            <!-- GET/POST -->
             <br>
-            <button type="submit">確定</button>
-        </form>
+            需要更多資訊?免費索取健身資訊<br>
+            <b>前100名還贈送［我愛健身］書籍一本!</b>
+        </div>
+        <div class="text2 text4">
+            <form action="" method="get">
+                <p><label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email">
+                </p>
+                <label for="comment">您的寶貴意見</label><br>
+                <textarea name="" id="comment" cols="30" rows="10"></textarea>
+                <br>
+                <button type="submit">確定</button>
+            </form>
+        </div>
         <br>
     </div>
 </body>
