@@ -1,0 +1,125 @@
+body {
+    background-color: #ffe9f4;
+    font-family: 'Times New Roman', Times, serif, 新細明體;
+}
+
+#container {
+    width: 75%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif, 標楷體;
+}
+
+.title {
+    display: inline-block;
+    margin: 10px 10px;
+    padding: 5px 10px;
+    color: pink;
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif, 標楷體;
+    font-size: 2rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 0.5rem;
+
+}
+
+.text1 {
+    margin: 10px;
+    padding: 10px 32px;
+    color: #ffffff;
+    background-color: #ffb3bf;
+    font-family: 'Times New Roman', Times, serif, 新細明體;
+    font-size: 1rem;
+    line-height: 2rem;
+    /* text-align: center; */
+    border-radius: 0.5rem;
+}
+
+.text2 {
+    margin: 10px;
+    padding: 10px 32px;
+    color: #775c60;
+    background-color: #c2d3fd;
+    font-family: 'Times New Roman', Times, serif, 新細明體;
+    font-size: 1rem;
+    line-height: 2rem;
+    /* text-align: center; */
+    border-radius: 0.5rem;
+}
+
+.text3 {
+    margin: 10px;
+    padding: 10px 32px;
+    color: #000000;
+    background-color: #cff0ec;
+    font-family: 'Times New Roman', Times, serif, 新細明體;
+    font-size: 1rem;
+    /* text-align: center; */
+    border-radius: 0.5rem;
+}
+
+.text4 {
+    text-align: center;
+}
+
+ol {}
+
+li {
+    text-align: left;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+ul a {
+    text-decoration: none;
+    line-height: 20px;
+}
+
+ul a:hover {
+    color: chartreuse;
+}
+
+ul a:visited {
+    color: darkkhaki;
+}
+
+ul a:active {
+    color: red;
+}
+
+#image img {
+    background-color: #ffb3bf;
+    padding: 3px;
+    width: 31%;
+
+}
+
+form {
+    text-align: center;
+}
+
+textarea,
+label {
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+input,
+textarea[id="comment"] {
+    font-size: 1rem;
+    text-align: center;
+    background-color: #f6dec9;
+}
+
+button[type="submit"] {
+    background-color: #ffb3bf;
+}
