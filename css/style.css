@@ -67,7 +67,9 @@ h1 {
     text-align: center;
 }
 
-ol {}
+ol {
+    text-align: left
+}
 
 li {
     text-align: left;
