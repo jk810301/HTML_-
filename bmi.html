@@ -19,6 +19,17 @@
                 width: 100%
             }
         }
+
+        #comment {
+            background-color: #ffffff;
+            width: 50%;
+            margin: 0 auto;
+            height: 4rem;
+            font-size: 4rem;
+
+
+
+        }
     </style>
 </head>
 
@@ -26,30 +37,36 @@
     <div id="container">
         <h1 class="title">BMI計算機</h1>
         <form action="" method="get">
+
             <div>
                 <table>
                     <tbody>
                         <tr>
                             <th>姓名</th>
-                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="name" id="name" value=""></td>
                         </tr>
                         <tr>
                             <th><label for="height">身高</label></th>
-                            <td><input type="number" name="height" id="height" required step="0.1"></td>
+                            <td><input type="number" name="height" id="height" value="" required step="0.1"></td>
                         </tr>
                         <tr>
                             <th><label for="weight">體重</label></th>
-                            <td><input type="number" name="weight" id="weight" required step="0.1"></td>
+                            <td><input type="number" name="weight" id="weight" value="" required step="0.1"></td>
                         </tr>
                         <tr>
-                            <th><button type="submit">計算</button></th>
+                            <th><button type="submit" id="calc">計算</button></th>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </form>
+        <p id="comment">
+            BMI:<span class="bmi" style=""></span>
+        </p>
+        <br>
         <a href="index.html">回首頁</a>
     </div>
+    <script src="./js/bmi.js"></script>
 </body>
 
 </html>
